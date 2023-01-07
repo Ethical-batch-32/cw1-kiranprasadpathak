@@ -5,6 +5,13 @@ menu.onclick = () =>{
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 }
+document.querySelector('#signup-btn').onclick = () =>{
+  document.querySelector('.signup-form-container').classList.toggle('active');
+}
+
+document.querySelector('#close-signup-form').onclick = () =>{
+  document.querySelector('.signup-form-container').classList.remove('active');
+}
 
 document.querySelector('#login-btn').onclick = () =>{
   document.querySelector('.login-form-container').classList.toggle('active');
